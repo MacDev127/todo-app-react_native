@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import {
   StyleSheet,
   View,
-  Text,
   FlatList,
   Alert,
   TouchableWithoutFeedback,
@@ -12,7 +11,6 @@ import {
 import Header from '../components/header';
 import TodoItem from '../components/todoItem';
 import AddTodo from '../components/addTodo';
-import Sandbox from '../components/sandbox';
 const index = () => {
   const [todos, setTodos] = useState([
     { text: 'buy coffee', key: '1' },
@@ -39,7 +37,6 @@ const index = () => {
   };
 
   return (
-    // <Sandbox />
     <TouchableWithoutFeedback
       onPress={() => {
         Keyboard.dismiss();
